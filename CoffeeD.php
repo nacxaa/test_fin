@@ -3,7 +3,7 @@
 require_once 'CoffeeInterface.php';
 
 class CoffeeD implements \CoffeeInterface {
-    public $ownObj;
+    protected $ownObj;
 
     public function __construct(CoffeeInterface $obj) {
         $this->ownObj = $obj;
